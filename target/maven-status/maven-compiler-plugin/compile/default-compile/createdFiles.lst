@@ -1,0 +1,3 @@
+resources\Base.class
+academy\App.class
+pageObjects\ForgotPassword.class

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="academy.Listeners"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Cursos/Selenium/E2EProject">
+        <classes>
+            <class name="academy.HomePage">
+                <methods>
+                    <include name="basePageNavigation"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+    <test name="ValidationNavigationBar">
+        <classes>
+            <class name="academy.ValidateNavigationBar">
+                <methods>
+                    <include name="basePageNavigation"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test name="ValidateTitle">
+        <classes>
+            <class name="academy.ValidateTitle">
+                <methods>
+                    <include name="basePageNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
